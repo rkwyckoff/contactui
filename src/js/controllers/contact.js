@@ -11,7 +11,7 @@ function ContactController ($scope, $http, $state) {
   }
 
   init();
-
+}
   ContactController.$inject = ['$scope', '$http', '$state'];
 
   export default ContactController;
