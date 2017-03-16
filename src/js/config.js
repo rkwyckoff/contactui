@@ -8,11 +8,12 @@ function Config ($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/contact-list.tpl.html',
       controller: 'ContactController'
     })
-    // .state('shelter-new', {
-    //   url: '/shelters/new',
-    //   templateUrl: 'templates/shelter-add.tpl.html',
-    //   controller: 'ShelterController'
-    // })
+     .state('contact-each', {
+
+       url: '/contacts/:id',
+       templateUrl: 'templates/contact-each.tpl.html',
+       controller: 'ShowContactController'
+     })
     // .state('shelter', {
     //   url: '/shelters',
     //   template: `<h1>Shelters are cool cause animals are cool.</h1>`
