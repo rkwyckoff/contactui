@@ -14,7 +14,7 @@ function Config ($stateProvider, $urlRouterProvider) {
        templateUrl: 'templates/contact-each.tpl.html',
        controller: 'ShowContactController'
      })
-     .state('contacts-add', {
+     .state('contact-add', {
        url: '/contacts',
        templateUrl: 'templates/contact-add.tpl.html',
        controller: 'AddContactController'
