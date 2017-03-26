@@ -7,7 +7,7 @@ function ShowContactController ($scope, $http, $stateParams) {
     var url = `${SERVER_URL}/contacts/${contactId}`;
     $http.get(url).then(resp => {
       $scope.contact = resp.data;
-    })
+    });
   }
   init();
 }

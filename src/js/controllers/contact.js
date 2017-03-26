@@ -11,6 +11,14 @@ function ContactController ($scope, $http, $state) {
   }
 
   init();
+  $scope.addContact = function () {
+    //console.log("inside addcontact")
+    //var url = `${SERVER_URL}/contacts/${contactId}`;
+    //console.log(`${SERVER_URL}/contacts/${contactId}`)
+    // $http.post(url, data).then(resp => {
+      $state.go("contact-add");
+
+  };
 }
 ContactController.$inject = ['$scope', '$http', '$state'];
 
