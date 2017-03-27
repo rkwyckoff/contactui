@@ -1,12 +1,10 @@
 function Config ($stateProvider, $urlRouterProvider) {
-  console.log($stateProvider);
-  console.log($urlRouterProvider);
 
   $stateProvider
     .state('home', {
       url: '/home',
       templateUrl: 'templates/contact-list.tpl.html',
-      controller: 'ContactController'
+      controller: 'ContactListController'
     })
      .state('contact-each', {
 
